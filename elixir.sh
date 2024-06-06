@@ -1,7 +1,11 @@
+#sudo apt-get install libwxgtk3.0-gtk3-dev
+sudo apt-get update
+sudo apt-get upgrade
+
 # install erlang
 asdf plugin add erlang 
-asdf install erlang 24.0
-asdf global erlang 24.0
+asdf install erlang 27.0
+asdf global erlang 27.0
 
 # install elixir
 asdf plugin-add elixir
