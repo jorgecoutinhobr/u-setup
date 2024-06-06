@@ -14,3 +14,6 @@
 - add mysql and postgre?
 - find a way to do it all at once
   - add menu to choose the stack you want to install 
+- add '-y' to all install pkg
+
+- fix problem with oh my bash and asdf -> both need to close and open terminal

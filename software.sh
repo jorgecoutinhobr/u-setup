@@ -1,13 +1,4 @@
-# install dependencies
 sudo apt-get update
-
-# install asdf
-git clone https://github.com/excid3/asdf.git ~/.asdf
-echo '. "$HOME/.asdf/asdf.sh"' >> ~/.bashrc
-echo '. "$HOME/.asdf/completions/asdf.bash"' >> ~/.bashrc
-echo 'legacy_version_file = yes' >> ~/.asdfrc
-echo 'export EDITOR="code --wait"' >> ~/.bashrc
-source ~/.bashrc
 
 # Installl Opera
 wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
@@ -15,10 +6,10 @@ echo "deb https://deb.opera.com/opera-stable/ stable non-free" | sudo tee /etc/a
 sudo apt-get update && sudo apt-get install opera-stable
 
 # install code
-sudo apt-get install code
+sudo apt-get install -y code
 
 # install flameshot
-sudo apt install flameshot
+sudo apt install -y flameshot
 
 # install openfortiGUI
 wget https://apt.iteas.at/iteas/pool/main/o/openfortigui/openfortigui_0.9.10-1_amd64_noble.deb -O openfortigui.deb
@@ -27,7 +18,7 @@ sudo apt-get install -f
 sudo dpkg -i openfortigui.deb
 
 # install chromium
-sudo apt install chromium-chromedriver
+sudo apt install -y chromium-chromedriver
 
 # install chrome 117
 #wget http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_117.0.5938.132-1_amd64.deb
