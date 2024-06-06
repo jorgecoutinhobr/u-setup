@@ -30,7 +30,7 @@ while true; do
         ;;
       "Choose your stack")
         PS3='Please, Choose your stack: '
-        stacks=("Ruby on Rails" "Elixir and Phoenix" "Java and Spring" "Voltar")
+        stacks=("Ruby on Rails" "Elixir and Phoenix" "Java and Spring" "Back")
         select stack in "${stacks[@]}"
         do
           case $stack in
@@ -49,10 +49,10 @@ while true; do
               source ./stack/java_spring.sh
               break 2
               ;;
-            "Voltar")
+            "Back")
               break 2
               ;;
-            *) echo "Opção inválida $REPLY";;
+            *) echo "Invalid Option $REPLY";;
           esac
         done
         ;;
