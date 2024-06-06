@@ -12,6 +12,10 @@ asdf plugin-add elixir
 asdf install elixir 1.16.0
 asdf global elixir 1.16.0
 
+#install nodejs
+asdf install nodejs 20.11.0
+asdf global nodejs 20.11.0
+
 # install phoenix
 mix local.hex --force
 mix archive.install hex phx_new
