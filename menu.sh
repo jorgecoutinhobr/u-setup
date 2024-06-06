@@ -1,20 +1,26 @@
 #!/bin/bash
-echo "Welcome to Jorge Dev Setup!"
 
-PS3='Do you want install oh my bash? (y/n): '
+source ./config/colors.sh
+
+echo "-----------------------------------------------------"
+echo -e "    \e[1m${GREEN}Welcome to Jorge Dev Setup!${NONE}\e[0m"
+echo "-----------------------------------------------------"
+PS3='Do you want install "oh my bash"? (y/n): '
 read -r -p "$PS3" response
 if [[ $response == "y" ]]; then
-  echo "Installing oh my bash..."
+  echo -e "${PURPLE}Installing oh my bash...${NONE}"
   source ./software/oh_my_bash.sh
+  echo
 else
   echo "Skipping oh my bash installation..."
+  echo
 fi
 
-echo "For the next steps, it is highly recommended to install the dependencies first"
-
+echo -e "${BOLD}For the next steps, ${GREEN}it is highly recommended${NONE} ${BOLD}to install the dependencies first${NONE}"
 while true; do
+  echo "-----------------------------------------------------"
   PS3='Please, choose a option: '
-  options=("Install dependencies" "Install softwares defaults by Jorge" "Choose your stack" "Exit")
+  options=("Install dependencies" "Install software defaults by Jorge" "Choose your stack" "Exit")
   select opt in "${options[@]}"
   do
     case $opt in
@@ -23,30 +29,32 @@ while true; do
         source ./dependencies/dependencies.sh
         break
         ;;
-      "Install softwares defaults by Jorge")
-        echo "Installing softwares defaults by Jorge..."
+      "Install software defaults by Jorge")
+        echo "Installing software defaults by Jorge..."
         source ./software/software.sh
         break
         ;;
       "Choose your stack")
+        echo
+        echo "-----------------------------------------------------"
         PS3='Please, Choose your stack: '
         stacks=("Ruby on Rails" "Elixir and Phoenix" "Java and Spring" "Back")
         select stack in "${stacks[@]}"
         do
           case $stack in
             "Ruby on Rails")
-              echo "Installing Ruby, Node and Rails...."
-              source ./stack/ror.sh
+              echo "${RED}Installing Ruby, Node and Rails....${NONE}"
+              source ./stacks/ror.sh
               break 2
               ;;
             "Elixir and Phoenix")
-              echo "Installing Elixir, Erlang and Phoenix..."
-              source ./stack/elixir.sh
+              echo "${PURPLE}Installing Elixir, Erlang and Phoenix...${NONE}"
+              source ./stacks/elixir.sh
               break 2
               ;;
             "Java and Spring")
-              echo "Installing Java and Spring..."
-              source ./stack/java_spring.sh
+              echo -e "${GREEN}Installing Java and Spring...${NONE}"
+              source ./stacks/java_spring.sh
               break 2
               ;;
             "Back")
@@ -57,9 +65,14 @@ while true; do
         done
         ;;
       "Exit")
+        echo
+        echo 'Goodbye!'
+        echo 'Made with ❤️ by Jorge '
+        echo -e "${GREEN}Github: jorgecoutinhobr${NONE}"
         exit 0
         ;;
       *) echo "Invalid Option $REPLY";;
     esac
   done
+  echo
 done
