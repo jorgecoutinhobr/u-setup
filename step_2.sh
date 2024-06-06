@@ -26,12 +26,13 @@ sudo dpkg -i openfortigui.deb
 sudo apt install chromium-chromedriver
 
 # install chrome 117
-wget http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_117.0.5938.132-1_amd64.deb
-sudo apt-get install libasound2t64
-sudo apt-get install fonts-liberation libasound2 libnspr4 libnss3 libu2f-udev xdg-utils
+#wget http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_117.0.5938.132-1_amd64.deb
+#sudo apt-get install libasound2t64
+#sudo apt-get install fonts-liberation libasound2 libnspr4 libnss3 libu2f-udev xdg-utils
+#sudo apt install -y libnotify4 libxss1 # discord dependencies
 #sudo apt-get install -f
-sudo dpkg -i google-chrome-stable_117.0.5938.132-1_amd64.deb
-sudo apt-mark hold google-chrome-stable # prevent auto update
+#sudo dpkg -i google-chrome-stable_117.0.5938.132-1_amd64.deb
+#sudo apt-mark hold google-chrome-stable # prevent auto update
 
 # install notion - NEED TO FIX  
 # sudo apt install liblua5.3-0
