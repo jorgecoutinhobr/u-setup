@@ -25,12 +25,12 @@ while true; do
   do
     case $opt in
       "Install dependencies")
-        echo "Installing dependencies..."
+        echo -e "${YELLOW}Installing dependencies...${NONE}"
         source ./dependencies/dependencies.sh
         break
         ;;
       "Install software defaults by Jorge")
-        echo "Installing software defaults by Jorge..."
+        echo -e "${CYAN}Installing software defaults by Jorge...${NONE}"
         source ./software/software.sh
         break
         ;;
@@ -43,12 +43,12 @@ while true; do
         do
           case $stack in
             "Ruby on Rails")
-              echo "${RED}Installing Ruby, Node and Rails....${NONE}"
+              echo -e "${RED}Installing Ruby, Node and Rails....${NONE}"
               source ./stacks/ror.sh
               break 2
               ;;
             "Elixir and Phoenix")
-              echo "${PURPLE}Installing Elixir, Erlang and Phoenix...${NONE}"
+              echo -e "${PURPLE}Installing Elixir, Erlang and Phoenix...${NONE}"
               source ./stacks/elixir.sh
               break 2
               ;;
