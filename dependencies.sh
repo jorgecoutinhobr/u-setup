@@ -10,7 +10,6 @@ echo '. "$HOME/.asdf/asdf.sh"' >> ~/.bashrc
 echo '. "$HOME/.asdf/completions/asdf.bash"' >> ~/.bashrc
 echo 'legacy_version_file = yes' >> ~/.asdfrc
 echo 'export EDITOR="code --wait"' >> ~/.bashrc
-exec $SHELL
 
 # Installl Opera
 wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
