@@ -19,3 +19,4 @@
 - FIX chrome
 - add mysql and postgre?
 - find a way to do it all at once
+  - add menu to choose the stack you want to install 
