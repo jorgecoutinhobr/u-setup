@@ -5,7 +5,7 @@ PS3='Do you want install oh my bash? (y/n): '
 read -r -p "$PS3" response
 if [[ $response == "y" ]]; then
   echo "Installing oh my bash..."
-  source ./oh_my_bash.sh
+  source ./software/oh_my_bash.sh
 else
   echo "Skipping oh my bash installation..."
 fi
@@ -20,12 +20,12 @@ while true; do
     case $opt in
       "Install dependencies")
         echo "Installing dependencies..."
-        source ./dependencies.sh
+        source ./dependencies/dependencies.sh
         break
         ;;
       "Install softwares defaults by Jorge")
         echo "Installing softwares defaults by Jorge..."
-        source ./software.sh
+        source ./software/software.sh
         break
         ;;
       "Choose your stack")
@@ -36,17 +36,17 @@ while true; do
           case $stack in
             "Ruby on Rails")
               echo "Installing Ruby, Node and Rails...."
-              source ./ror.sh
+              source ./stack/ror.sh
               break 2
               ;;
             "Elixir and Phoenix")
               echo "Installing Elixir, Erlang and Phoenix..."
-              source ./elixir.sh
+              source ./stack/elixir.sh
               break 2
               ;;
             "Java and Spring")
               echo "Installing Java and Spring..."
-              source ./java_spring.sh
+              source ./stack/java_spring.sh
               break 2
               ;;
             "Voltar")
