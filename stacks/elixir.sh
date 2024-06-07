@@ -13,6 +13,7 @@ asdf install elixir 1.16.0
 asdf global elixir 1.16.0
 
 #install nodejs
+asdf plugin add nodejs
 asdf install nodejs 20.11.0
 asdf global nodejs 20.11.0
 
