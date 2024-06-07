@@ -49,7 +49,7 @@ while true; do
               ;;
             "Elixir and Phoenix")
               echo -e "${PURPLE}Installing Elixir, Erlang and Phoenix...${NONE}"
-              source ./stacks/elixir.sh
+              gnome-terminal -- /bin/bash -c "source ./stacks/elixir.sh"
               break 2
               ;;
             "Java and Spring")
