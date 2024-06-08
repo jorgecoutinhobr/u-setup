@@ -4,3 +4,7 @@ tar -xf zellij.tar.gz zellij
 sudo install zellij /usr/local/bin
 rm zellij.tar.gz
 cd -
+
+mkdir -p ~/.config/zellij/
+[ ! -f "$HOME/.config/zellij/config.kdl" ] && cp ~/.local/share/dev-setup-ubuntu-24-04/config/zellij.kdl ~/.config/zellij/config.kdl
+[ ! -L "$HOME/.config/zellij/themes" ] && ln -s ~/.local/share/dev-setup-ubuntu-24-04/theme/zellij ~/.config/zellij/themes
