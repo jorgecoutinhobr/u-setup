@@ -44,17 +44,17 @@ while true; do
           case $stack in
             "Ruby on Rails")
               echo -e "${RED}Installing Ruby, Node and Rails....${NONE}"
-              source ./stacks/ror.sh
+              gnome-terminal -- /bin/bash -c "source ./stacks/ror.sh"
               break 2
               ;;
             "Elixir and Phoenix")
               echo -e "${PURPLE}Installing Elixir, Erlang and Phoenix...${NONE}"
-              source ./stacks/elixir.sh
+              gnome-terminal -- /bin/bash -c "source ./stacks/elixir.sh"
               break 2
               ;;
             "Java and Spring")
               echo -e "${GREEN}Installing Java and Spring...${NONE}"
-              source ./stacks/java_spring.sh
+              gnome-terminal -- /bin/bash -c "source ./stacks/java_spring.sh"
               break 2
               ;;
             "Back")
