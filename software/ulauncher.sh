@@ -6,5 +6,5 @@ sudo apt install -y ulauncher
 mkdir -p ~/.config/autostart/
 cp ~/.local/share/dev-setup-ubuntu-24-04/config/ulauncher.desktop ~/.config/autostart/ulauncher.desktop
 gtk-launch ulauncher.desktop >/dev/null
-sleep 2
+sleep 4
 cp ~/.local/share//dev-setup-ubuntu-24-04/config/ulauncher.json ~/.config/ulauncher/settings.json
