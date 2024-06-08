@@ -1,4 +1,4 @@
-# dev-setup-ubuntu-24-04
+# u-setup
 
-git clone https://github.com/jorgecoutinhobr/dev-setup-ubuntu-24-04.git ~/.local/share/dev-setup-ubuntu-24-04 > /dev/null
-source ~/.local/share/dev-setup-ubuntu-24-04/install.sh
+git clone https://github.com/jorgecoutinhobr/u-setup.git ~/.local/share/u-setup > /dev/null
+source ~/.local/share/u-setup/install.sh
