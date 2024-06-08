@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./config/colors.sh
+source ./colors.sh
 
 echo "-----------------------------------------------------"
 echo -e "    \e[1m${GREEN}Welcome to Jorge Dev Setup!${NONE}\e[0m"
