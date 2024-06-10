@@ -6,7 +6,7 @@ my personal setup for development for ubuntu-24.04 inspired by Omakub
   `git clone https://github.com/jorgecoutinhobr/u-setup.git ~/.local/share/u-setup > /dev/null` 
 
 2. Go to project folder
-  `~/.local/share/u-setup`
+  `cd ~/.local/share/u-setup`
 
 3. Then run
 	`bash setup.sh`
