@@ -3,7 +3,6 @@ source ./logo.sh
 sudo apt-get install -y git curl unzip
 
 for software in ./software/*.sh; do source $software; done
-for config in ./config/*.sh; do source $config; done
 
 source ./config/bash.sh
 
