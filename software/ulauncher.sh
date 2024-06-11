@@ -7,4 +7,4 @@ mkdir -p ~/.config/autostart/
 cp ~/.local/share/u-setup/config/ulauncher.desktop ~/.config/autostart/ulauncher.desktop
 gtk-launch ulauncher.desktop >/dev/null
 sleep 4
-cp ~/.local/share//u-setup/config/ulauncher.json ~/.config/ulauncher/settings.json
+cp ~/.local/share/u-setup/config/ulauncher.json ~/.config/ulauncher/settings.json

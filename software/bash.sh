@@ -15,8 +15,9 @@ alias r='rails'
 alias bat='batcat'
 
 alias gcm='git commit -m'
-alias gcam='git commit -a -m'
-alias gcad='git commit -a --amend'
+
+alias u='sudo apt update'
+alias i='sudo apt install'
 
 compress() { tar -czf "${1%/}.tar.gz" "${1%/}"; }
 alias decompress="tar -xzf"

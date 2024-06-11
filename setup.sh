@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source ./logo.sh
 sudo apt-get install -y git curl unzip
 
 for software in ./software/*.sh; do source $software; done
