@@ -1,0 +1,4 @@
+source ~/.local/share/u-setup/config/bash/shell
+source ~/.local/share/u-setup/config/bash/aliases
+source ~/.local/share/u-setup/config/bash/prompt
+source ~/.local/share/u-setup/config/bash/init
