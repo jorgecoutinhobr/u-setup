@@ -1,1 +1,1 @@
-import = [ "~/.local/share/u-setup/theme/alacritty/cascadia-mono.toml" ]
+import = [ "~/.local/share/u-setup/config/alacritty/fonts/jetbrains-mono.toml" ]
