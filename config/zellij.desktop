@@ -3,7 +3,7 @@ Version=1.0
 Type=Application
 Name=Zellij
 Comment=Terminal multiplexer
-Exec=Exec=alacritty -e bash -c 'source ~/.bash_profile && zellij'
+Exec=Exec=alacritty -e bash -c 'zellij'
 Icon=/home/$USER/.local/share/u-setup/icon/zellij.png
 Terminal=false
 Categories=Utility;TerminalEmulator;
