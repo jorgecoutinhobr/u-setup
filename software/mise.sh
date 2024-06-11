@@ -7,4 +7,4 @@ sudo apt install -y mise
 
 mise use --global ruby@3.3
 mise use --global node@lts
-echo 'export PATH="$HOME/.local/share/mise/shims:$PATH"' >> ~/.bash_profile
+#echo 'export PATH="$HOME/.local/share/mise/shims:$PATH"' >> ~/.bash_profile
