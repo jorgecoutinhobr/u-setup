@@ -23,6 +23,8 @@ My personal setup for development for ubuntu-24.04 inspired by Omakub
 - [ ] Add chrome
 - [ ] change gnome-tweaks super-left to super-right
 - [ ] Fix Walyland error { sudo nano /etc/gdm3/custom.conf -> uncomment `waylandEnable = false` }
+- [ ] Fix Fortivpn ()
+- [ ] Change from toolbox tto rubymine 
 
 
 
